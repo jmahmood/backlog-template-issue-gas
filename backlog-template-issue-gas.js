@@ -100,8 +100,12 @@ function createIssue(issue) {
 }
 
 function getRequestUri_() {
+	// Switched it to work on Backlogtool, the international version.
+	// Once we take a look at the UserProperties value, we can probably
+	// find a simple way to get it to work on either Japanese or the Regular
+	// version.
 	return "https://" + UserProperties.getProperty("bti.space")
-			+ ".backlog.jp/XML-RPC";
+			+ ".backlogtool.com/XML-RPC";
 }
 
 // ------------------------- 関数 -------------------------
